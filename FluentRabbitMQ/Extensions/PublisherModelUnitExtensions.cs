@@ -6,13 +6,13 @@ namespace FluentRabbitMQ.Extensions
 {
     public static class PublisherModelUnitExtensions
     {
-        public static ReceiverModelUnit Send(this ReceiverModelUnit @this, string message)
+        public static PublisherModelUnit Send(this PublisherModelUnit @this, string message)
         {
             @this.ModelUnit.Message = message;
             return @this;
         }
 
-        public static ReceiverModelUnit To(this ReceiverModelUnit @this, string routingKey = "")
+        public static PublisherModelUnit To(this PublisherModelUnit @this, string routingKey = "")
         {
             var convertedBody = Encoding.UTF8.GetBytes(@this.ModelUnit.Message);
 

@@ -12,9 +12,9 @@ namespace FluentRabbitMQ.TestPublisher
             Console.WriteLine("Appuyez pour envoyer le message");
             Console.ReadLine();
 
-            var exchange = new ConnectionFactory().ConnectTo("localhost").AndUseExchange("AExchangeName").OfType(ExchangeType.Direct).GetReceiver();
-            exchange.Send("A message").To("ARoutingKey");
-            exchange.Send("Another message").To("AnotherRoutingKey");
+            var publisher = new ConnectionFactory().ConnectTo("localhost").AndUseExchange("AExchangeName").OfType(ExchangeType.Direct).GetPublisher();
+            publisher.Send("A message").To("ARoutingKey");
+            publisher.Send("Another message").To("AnotherRoutingKey");
         }
     }
 }

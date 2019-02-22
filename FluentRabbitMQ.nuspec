@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>FluentRabbitMQ</id>
-    <version>1.0.0-alpha</version>
+    <version>1.0.0-preview</version>
     <authors>Damien Vande Kerckhove</authors>
     <owners>vdekercd</owners>
     <projectUrl>https://github.com/vdekercd/FluentRabbitMQ</projectUrl>
