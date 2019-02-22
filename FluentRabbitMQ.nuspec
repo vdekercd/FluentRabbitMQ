@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>FluentRabbitMQ</id>
+    <version>1.0.0-alpha</version>
+    <authors>Damien Vande Kerckhove</authors>
+    <owners>vdekercd</owners>
+    <projectUrl>https://github.com/vdekercd/FluentRabbitMQ</projectUrl>
+    <license type="expression">Apache-2.0</license>
+    <iconUrl>http://github.com/contoso/UsefulStuff/nuget_icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Alpha version</releaseNotes>
+    <description>The easiest way to use RabbitMq</description>
+    <copyright>Copyright ©2019 Damien Vande Kerckhove</copyright>
+    <tags>message_queuing rabbitMq c#</tags>
+    <dependencies>
+      <dependency id="RabbitMQ.Client" version="5.1.0" />
+    </dependencies>
+  </metadata>
+</package>
